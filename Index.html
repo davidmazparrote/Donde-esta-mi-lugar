@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Quiero Mi Lugar</title>
+    <br><br>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="Controller.js"></script>
+</head>
+<!--PASA A GUTHUBBBB !!!!!!!!!!!!!!-->
+
+<body tyle="opacity:0.1;">
+    <div class="content">
+        <h1 style="color:rgb(195, 181, 110)">Fecha del evento</h1>
+        <br>
+        <form action="/action_page.php"></form>
+        <label style="color:rgb(195, 181, 110)" id="sunday">Sin fechas disponibles</label>
+        <br><br>
+        <label style="color:rgb(195, 181, 110)" for="userCode">Codigo:</label>
+        <input required="true" placeholder="Ingrese su codigo" class="transbox" type="text" id="userCode" name="userCode"><br><br>
+        <br />
+        <button type="button" class="btn btn-warning" onclick="getReservation()">Enviar</button>
+        <br />
+        <label style="color:rgb(206, 35, 35)" id="message"></label>
+        <br /><br />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Girl in a jacket"
+            width="40" height="40">
+
+        <label style="color:rgb(195, 181, 110)" id="wath">No tenes codigo?</label>
+
+        <a href="https://api.whatsapp.com/send?phone=54911+numerodeWathsapp">Solicitalo aqui por Wathsapp</a>
+        <!--https://stackoverflow.com/questions/30344476/web-link-to-specific-whatsapp-contact
+tambien podes dejar un msj predeterminado
+-->
+        </form>
+    </div>
+</body>
+
+<script>
+    function setDay() {
+        document.getElementById("sunday").innerHTML = getNextSunday();
+    }
+    setDay();
+</script>
+
+</html>

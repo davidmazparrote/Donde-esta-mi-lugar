@@ -1,0 +1,21 @@
+body {
+    background: rgba(0, 0, 0);
+    background-image: url('logo-dorado1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50% 50%;
+    background-position: bottom right;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.transbox {
+
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
